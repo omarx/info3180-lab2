@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block main %}
+  <section class="container border border-dark rounded-2">
+    <div class="row justify-content-center" style="background-color:#65aa77">
+        <div class="col-12 col-md-8 text-center">
+            <img class='p-3 w-25' src="{{url_for('static',filename='images/profile-avatar.png')}}" alt="avatar"/>
+            <h3 class="text-light">Omar Peart</h3>
+            <p class="text-light">@omarx</p>
+            <p class="text-light">Kingston,Jamaica</p>
+            <p class="text-light">Joined {{ date_joined }}</p>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-8">
+            <p class="text-center p-3">
+                Originating from the vibrant city of Kingston, Jamaica, I am a 26-year-old innovative web developer. My foundation in this field is cemented by a Bachelor's degree in Computer Science, supplemented by a Minor in Economics, both of which I earned from the prestigious University of the West Indies. Presently, I specialize in full stack and mobile development, exhibiting proficiency in multiple programming languages including Java, Javascript, and Python. My holistic understanding of technology coupled with a passion for creative problem-solving drives my commitment towards designing and developing seamless, user-centric digital solutions.
+            </p>
+            <div class="p-2s"></div>
+           <div class="d-flex justify-content-evenly">
+               <span><strong>7</strong></span>
+               <span><strong>100</strong></span>
+               <span><strong>250</strong></span>
+           </div>
+            <div class="d-flex justify-content-evenly">
+               <span>Post</span>
+               <span >Following</span>
+               <span >Followers</span>
+           </div>
+            <div class="p-2"></div>
+            <div class="d-flex justify-content-center p-4">
+                <button type="button" class="btn btn-success w-25 p-2">Follow</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}
